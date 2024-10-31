@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 const RegisterPage = require("../Pages/registerPagePO");
-const LoginPage = require("../Pages/loginPagePO");
+const LoginPage = require("../pages/loginPagePO");
 
 test.beforeEach(async ({ page }) => {
   await page.goto("https://demowebshop.tricentis.com/");
