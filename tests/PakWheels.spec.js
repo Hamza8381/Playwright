@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { describe } from "node:test";
 const Signup = require("../Pages/signUpPakWheelPO");
 const SignIn = require("../pages/SigninPakWheelPO");
 test.describe("Pakwheel Signup and SignIn using POM", () => {
@@ -10,7 +11,7 @@ test.describe("Pakwheel Signup and SignIn using POM", () => {
     await page.waitForTimeout(4000);
   });
 
-  test.only("signIn", async ({ page }) => {
+  test("signIn", async ({ page }) => {
     const signin = new SignIn(page);
     await signin.signInLink();
     await signin.signInfun();

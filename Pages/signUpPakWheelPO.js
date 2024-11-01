@@ -11,7 +11,7 @@ class Signup {
 
   async Signupnewuser() {
     await this.page.fill(this.fullName, "hamza");
-    await this.page.fill(this.email, "hamzi99@yopmail.com");
+    await this.page.fill(this.email, "hamzii1@yopmail.com");
     await this.page.fill(this.password, "hamza129");
     await this.page.fill(this.confirmPassword, "hamza129");
     await this.page.click(this.createAccount);
